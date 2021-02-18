@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Spaceship : MonoBehaviour
 {
+    private AlienInvasion deductShip;
+
     //Create the laser prefab
     public GameObject laserPrefab;
 
@@ -25,6 +27,8 @@ public class Spaceship : MonoBehaviour
         //Set the time in beween laser blasts
         Invoke("laserBlast", 2f);
 
+        deductShip = Camera.main.GetComponent<AlienInvasion>();
+
     }
 
     void laserBlast()
@@ -41,6 +45,7 @@ public class Spaceship : MonoBehaviour
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
+            deductShip.ShipCheck();
         }
     }
 

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,14 +8,18 @@ public class AlienInvasion : MonoBehaviour
 {
 
     public int numHouse = 4;
-    public List<GameObject> houseList;
     public int numGenerator = 5;
-    public List<GameObject> generatorList;
+    public int numShip = 2;
+    //public GameObject winTextObject;
+    //public GameObject loseTextObject;
+    //public float textDelay = 3f;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //loseTextObject.SetActive(false);
+        //winTextObject.SetActive(false);
     }
 
     public void HouseDestroyed()
@@ -22,6 +27,7 @@ public class AlienInvasion : MonoBehaviour
         numHouse = numHouse - 1;
         if (numHouse == 0)
         {
+            //loseTextObject.SetActive(true);
             SceneManager.LoadScene("Main-Prototype 1");
         }
     }
@@ -34,6 +40,17 @@ public class AlienInvasion : MonoBehaviour
             Destroy(GameObject.FindGameObjectWithTag("Barrier"));
         }
     }
+
+    public void ShipCheck()
+    {
+            numShip = numShip - 1;
+            if (numShip == 0)
+            {
+            SceneManager.LoadScene("Main-Prototype 1");
+            }
+       
+    }
+
 
     // Update is called once per frame
     void Update()
