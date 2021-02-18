@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float bottomY = -20f;
 
     // Update is called once per frame
     void Update()
     {
-        
+     if (transform.position.y<-20)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5916567077988981915}
   - component: {fileID: 1051873944553661849}
   - component: {fileID: 141936903384657788}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 5931795742672822085}
   - component: {fileID: 69996949653963762}
   - component: {fileID: 735870461739969149}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Saucer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2421935550586018074}
   - component: {fileID: -6483403954221548163}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spaceship
   m_TagString: Spaceship
   m_Icon: {fileID: 0}
