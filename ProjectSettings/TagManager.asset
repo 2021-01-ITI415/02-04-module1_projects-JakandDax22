@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Apple
   - Projectile
+  - Laser
+  - Spaceship
+  - Barrier
   layers:
   - Default
   - TransparentFX
@@ -18,9 +21,9 @@ TagManager:
   - AppleTree
   - Apple
   - Basket
-  - 
-  - 
-  - 
+  - Spaceship
+  - Laser
+  - Barrier
   - 
   - 
   - 
