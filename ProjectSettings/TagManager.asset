@@ -9,6 +9,8 @@ TagManager:
   - Laser
   - Spaceship
   - Barrier
+  - House
+  - Generator
   layers:
   - Default
   - TransparentFX
@@ -24,9 +26,9 @@ TagManager:
   - Spaceship
   - Laser
   - Barrier
-  - 
-  - 
-  - 
+  - Slingshot
+  - Projectile
+  - Generator
   - 
   - 
   - 

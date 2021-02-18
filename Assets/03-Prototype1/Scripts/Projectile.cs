@@ -10,21 +10,18 @@ public class Projectile : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-
-        if (other.gameObject.tag == "Generator")
-        {
-            Destroy(other.gameObject);
-            Destroy(gameObject);
-            //Invoke generatorDestroyed();
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {
         if (transform.position.y < -20)
+        {
+            Destroy(this.gameObject);
+        }
+
+        if (transform.position.x < -30)
+        {
+            Destroy(this.gameObject);
+        } else if (transform.position.x > 30)
         {
             Destroy(this.gameObject);
         }

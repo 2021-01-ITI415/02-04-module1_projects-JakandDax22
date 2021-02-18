@@ -34,6 +34,17 @@ public class Spaceship : MonoBehaviour
         Invoke("laserBlast", secondsbetweenLaser);
     }
 
+    private void OnCollisionEnter(Collision other)
+    {
+
+        if (other.gameObject.tag == "Projectile")
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+    }
+
+
     // Update is called once per frame
     void Update()
     {

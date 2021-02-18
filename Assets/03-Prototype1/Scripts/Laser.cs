@@ -5,14 +5,20 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
     public float bottomY = -20f;
-    
+    private AlienInvasion deductHouse;
+
+    public void Start()
+    {
+        deductHouse = Camera.main.GetComponent<AlienInvasion>();
+    }
+
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "House")
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
-            //Invoke houseDestroyed();
+            deductHouse.HouseDestroyed();
         }
 
         if (other.gameObject.tag == "Projectile")
@@ -25,7 +31,7 @@ public class Laser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     if (transform.position.y < -20)
+        if (transform.position.y < -20)
         {
             Destroy(this.gameObject);
         }
