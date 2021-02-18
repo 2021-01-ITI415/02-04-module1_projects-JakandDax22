@@ -12,11 +12,6 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Laser")
-        {
-            Destroy(other.gameObject);
-            Destroy(gameObject);
-        }
 
         if (other.gameObject.tag == "Generator")
         {

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 786154856751675099}
   - component: {fileID: 2909345478594159167}
   - component: {fileID: 2956270719435224091}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3752789645252298369}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Generator
   m_TagString: Generator
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 714590333676819025}
   - component: {fileID: 8183310821138123193}
   - component: {fileID: 7519341717204674739}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 3990232747425396961}
   - component: {fileID: 5136589309396176561}
   - component: {fileID: 2435013328554213264}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Antenna
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,8 +10,14 @@ public class Laser : MonoBehaviour
     {
         if (other.gameObject.tag == "House")
         {
-            
             Destroy(other.gameObject);
+            Destroy(gameObject);
+            //Invoke houseDestroyed();
+        }
+
+        if (other.gameObject.tag == "Projectile")
+        {
+            Destroy(gameObject);
         }
     }
     
